@@ -22,14 +22,14 @@
       <th><?= $i ?></th>
       <?php
       for($j = 1; $j <= 9; $j++) {
-      $multiply = $i * $j;
-      if($multiply % 2 === 0):
-      ?>
-        <td class="even"><?= $multiply; ?></td>
-      <?php else: ?>
-        <td><?= $multiply; ?></td>
-      <?php
-      endif;
+        $multiply = $i * $j;
+        if($multiply % 2 === 0):
+        ?>
+          <td class="even"><?= $multiply; ?></td>
+        <?php else: ?>
+          <td><?= $multiply; ?></td>
+        <?php
+        endif;
       }
       ?>
     </tr>
